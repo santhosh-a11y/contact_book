@@ -4,7 +4,6 @@ operation = (input("enter operation: "))
 
 # a function to get inputs from the user
 def enterr():
-    
     try:
         with open("contacts.txt", "r") as i:
             contacts_dict = json.load(i)
@@ -34,6 +33,6 @@ def seee():
 # calling the enter function
 if operation == "write":
     enterr()
-
+# calling the see function
 elif operation == "see":
     seee()
